@@ -1,31 +1,5 @@
-/***
- Theme Name: Nest
- Description: Grocery, Super Market, eCommerce HTML Template
- Version: 5.6
- License: GNU General Public License v2 or later
- License URI: http://www.gnu.org/licenses/gpl-2.0.html
-==============================
-TABLE CONTENT
- Import Bunny Fonts
- Include Third Party CSS Library
- GENERAL
- HEADER
- Offcanvas Sidebar
- Search form
- Main header
- Mega menu
- Header layouts
- Page layouts
- Pagination
- Breadcrumb
- CATEGORY PAGES
- SINGLE POST
- Author box
- comment
- Post share social
- WP STYPE
- Custom amine
-***/
+
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
 @import url(https://fonts.bunny.net/css?family=lato:400,700,900|quicksand:400,500,600,700);
 /*import vendors*/
 @import url(vendors/normalize.css);
@@ -36,6 +10,20 @@ TABLE CONTENT
 @import url(plugins/select2.min.css);
 @import url(plugins/slick.css);
 @import url(plugins/perfect-scrollbar.css);
+@font-face {
+  font-family: "Cafe24Ssurround";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+  format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+  format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 /*RESET*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -7064,7 +7052,7 @@ h6.post-title {
 .header-wrap.header-space-between {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .header-wrap .header-right {
@@ -7086,6 +7074,12 @@ h6.post-title {
 
 .logo.logo-width-1 {
   margin-right: 70px;
+}
+.logoNew {
+  font-family: "Cafe24Ssurround";
+  color: pink;
+  font-size: 3rem;
+
 }
 
 .logo.logo-width-1 a img {
@@ -8337,10 +8331,10 @@ h6.post-title {
 }
 
 .header-style-1 .search-style-2 form {
-  border: 2px solid #BCE3C9;
+  border: 1px solid antiquewhite;
   border-radius: 4px;
   max-width: 700px;
-  background-color: #fff;
+
 }
 
 .header-style-1 .search-style-2 form input {
@@ -8353,9 +8347,10 @@ h6.post-title {
 }
 
 .header-style-1 .header-bottom-bg-color {
-  background-color: #fff;
+  background-color: #ff8c9f;
   border-top: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
+  color:white;
 }
 
 .header-style-1 .main-categori-wrap > a {
@@ -8460,9 +8455,9 @@ span.fi-rs-apps {
 .main-menu > nav > ul > li > a {
   display: inline-block;
   font-size: 16px;
-  font-weight: 700;
-  color: #253D4E;
-  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
+  color: white;
+  font-family: "Pretendard-Regular", sans-serif;
 }
 
 .main-menu > nav > ul > li > a i {
@@ -8671,8 +8666,10 @@ span.fi-rs-apps {
   background-color: #FD6E6E;
 }
 
-.main-menu > nav > ul > li:hover > a {
-  color: #3BB77E;
+.main-menu > nav > ul > li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: ease 1s;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
 
 .main-menu > nav > ul > li:hover ul.sub-menu {
@@ -12398,4 +12395,4 @@ footer .hotline img {
     font-size: 35px;
   }
 }
-/*# sourceMappingURL=main.css.map */
+

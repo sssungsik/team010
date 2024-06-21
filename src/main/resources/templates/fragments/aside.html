@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 	<div id="aside" th:fragment="asideFragment">
-		<main class="main float-start ml-50" >
+		<main class="main" >
 			<section class="home-slider position-relative mb-100">
 				<div class="container">
-					<div class="row">
+					<div class="row d-inline-block">
 						<div class="col-lg-2 d-none d-lg-flex">
 							<div class="categories-dropdown-wrap style-2 font-heading mt-30">
 								<div class="d-flex categori-dropdown-inner">
@@ -65,6 +66,13 @@
 								<div class="more_categories"><span class="icon"></span> <span class="heading-sm-1">Show more...</span></div>
 							</div>
 						</div>
+					</div>
+					<!-- 콘텐츠 영역 -->
+					<div id="content" class="col-lg-10 float-end mt-20">
+						<!-- layout:fragment 앞으로 이영역에 추가될 조각을 선언 -->
+						<th:block layout:fragment="customContent">
+
+						</th:block>
 					</div>
 				</div>
 			</section>

@@ -16,13 +16,8 @@
 		<!-- 왼쪽메뉴 -->
 		<div th:replace="~{fragments/aside :: asideFragment}"></div>
 
-		<!-- 콘텐츠 영역 -->
-		<div id="content" class="float-start">
-			<!-- layout:fragment 앞으로 이영역에 추가될 조각을 선언 -->
-			<th:block layout:fragment="customContent">
 
-			</th:block>
-		</div>
+
 		
 		<!-- 하단메뉴 -->
 		<div th:replace="~{fragments/footer :: footerFragment}"></div>
